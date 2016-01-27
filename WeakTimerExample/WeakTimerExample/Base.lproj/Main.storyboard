@@ -59,6 +59,14 @@
                                     <action selector="dismiss:" destination="OPb-BL-k1P" eventType="touchUpInside" id="8JA-sf-aRq"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Dh2-Ou-FER">
+                                <rect key="frame" x="98" y="194" width="131" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Restart timer"/>
+                                <connections>
+                                    <action selector="restartTimer:" destination="OPb-BL-k1P" eventType="touchUpInside" id="39X-4D-znG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93414614898989901" green="0.93414614898989901" blue="0.93414614898989901" alpha="1" colorSpace="calibratedRGB"/>
                     </view>

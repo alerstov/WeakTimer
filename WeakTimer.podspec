@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "WeakTimer"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "Block based weak timer"
   s.homepage         = "https://github.com/alerstov/WeakTimer"
   s.license          = 'MIT'

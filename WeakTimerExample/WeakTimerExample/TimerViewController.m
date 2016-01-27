@@ -11,6 +11,7 @@
 
 
 @interface TimerViewController ()
+@property (nonatomic) id restartToken;
 @property (nonatomic) id timerToken;
 @property (nonatomic) NSInteger value;
 @property (weak, nonatomic) IBOutlet UITextField *counter;
@@ -36,6 +37,13 @@
 - (IBAction)stopTimer:(id)sender {
     WEAK_TIMER_STOP(self.timerToken);
     // WEAK_TIMER_STOP_ALL();
+}
+
+- (IBAction)restartTimer:(id)sender {
+    NSLog(@"restart");
+    WEAK_TIMER_RESTART(self.restartToken, 5, {
+        NSLog(@"restart test");
+    });
 }
 
 - (IBAction)dismiss:(id)sender {

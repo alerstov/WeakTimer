@@ -76,6 +76,8 @@ static const void *TrackersKey = &TrackersKey;
 
 -(void)weakTimer_stopTimer:(id)token
 {
+    if (token == nil) return;
+    
     NSAssert([token isKindOfClass:[WeakTimerToken class]], @"Invalid token class");
     
     if ([token isKindOfClass:[WeakTimerToken class]]){

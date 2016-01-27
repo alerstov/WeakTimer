@@ -15,7 +15,9 @@
 #define WEAK_TIMER_STOP(token) [self weakTimer_stopTimer:token]
 #define WEAK_TIMER_STOP_ALL() [self weakTimer_stopAllTimers]
 
-
+#define WEAK_TIMER_RESTART(token, seconds, ...) \
+WEAK_TIMER_STOP(token); \
+token = _WEAK_TIMER_START(seconds, NO, __VA_ARGS__); \
 
 
 
